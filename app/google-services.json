@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "315464987829",
+    "project_id": "eduhub-d8695",
+    "storage_bucket": "eduhub-d8695.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315464987829:android:01dabb10ec6a2c83637afc",
+        "android_client_info": {
+          "package_name": "com.example.eduhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhdF6AmWSjDKQXPU9NQy5wSiFN-YfeXh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

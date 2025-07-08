@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EduHub</string>
+    <string name="welcome">Welcome to CSTU EduHub</string>
+    <string name="admin">Admin</string>
+    <string name="student">Student</string>
+    <string name="log">LogIn</string>
+    <string name="pass">Password</string>
+    <string name="signup">Do not have an account? Sign Up</string>
+    <string name="signin">Already have an account? Sign In</string>
+</resources>
