@@ -75,6 +75,7 @@ public class SignupActivity extends AppCompatActivity {
         userMap.put("password", pass);
         userMap.put("role", role);
 
+
         reference.push().setValue(userMap).addOnCompleteListener(task -> {
             dialog.dismiss();
             if (task.isSuccessful()) {
