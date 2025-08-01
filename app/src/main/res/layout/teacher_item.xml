@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/teacher_details_bg2"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/teacherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/teacherDesignation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designation"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/mail"/>
+
+        <TextView
+            android:id="@+id/teacherEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:autoLink="phone"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/contact"/>
+
+        <TextView
+            android:id="@+id/teacherPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:autoLink="phone"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

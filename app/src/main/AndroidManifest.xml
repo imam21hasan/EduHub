@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,25 +15,46 @@
         android:theme="@style/Theme.EduHub"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
+            android:name=".FlashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailsTeachers"
             android:exported="false" />
         <activity
-            android:name=".ActivitySix"
+            android:name=".TeacherFragment"
             android:exported="false" />
         <activity
-            android:name=".ActivityFive"
+            android:name=".StudentFragment"
             android:exported="false" />
         <activity
-            android:name=".ActivityFour"
+            android:name=".SignupAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".ActivityThree"
+            android:name=".FacultyMemberActivity"
             android:exported="false" />
         <activity
-            android:name=".ActivityTwo"
+            android:name=".SignupTcrActivity"
             android:exported="false" />
         <activity
-            android:name=".ActivityOne"
+            android:name=".BloodBank"
+            android:exported="false" />
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".NoticeActivity"
             android:exported="false" />
         <activity
             android:name=".StudentActivity"
@@ -48,11 +71,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

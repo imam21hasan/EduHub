@@ -33,6 +33,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation(libs.appcompat)
@@ -40,11 +41,12 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.firebase.auth)
+    implementation(libs.firebase.storage)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation ("com.google.firebase:firebase-auth:22.3.1")
     implementation ("com.google.firebase:firebase-database:21.0.0")
-
-
+    
 }
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/background_profile"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:strokeWidth="3dp"
+            app:strokeColor="@color/violet"
+            app:shapeAppearanceOverlay="@style/RoundedImageView"
+            android:src="@drawable/demo_profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/editProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:padding="0dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imam Hasan Shawon"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/background"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID : "
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginRight="2dp"
+                    />
+                <TextView
+                    android:id="@+id/studentID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B210101008"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Session : "
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginRight="2dp"
+                    />
+                <TextView
+                    android:id="@+id/studentSession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2021-22"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group : "
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"
+                    android:layout_marginRight="2dp"
+                    />
+                <TextView
+                    android:id="@+id/studentBlood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A+"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone : "
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginRight="2dp"
+                    />
+                <TextView
+                    android:id="@+id/studentPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="018xxxxxxxx"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

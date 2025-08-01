@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Teachers"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/violet"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/teacherEmail"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textSize="22sp"
+        android:background="@drawable/background"/>
+
+    <EditText
+        android:id="@+id/teacherDept"
+        android:hint="Department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textSize="22sp"
+        android:background="@drawable/background"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="26dp">
+
+        <Button
+            android:id="@+id/addTeacherBtn"
+            android:text="Add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/updateTeacherBtn"
+            android:text="Update"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"/>
+
+        <Button
+            android:id="@+id/deleteTeacherBtn"
+            android:text="Delete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

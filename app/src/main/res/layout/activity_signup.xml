@@ -4,82 +4,111 @@
     android:layout_height="match_parent"
     android:background="@color/main"
     android:gravity="center"
+    android:orientation="horizontal"
     android:padding="20dp">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
         android:background="@drawable/background"
-        >
+        android:orientation="vertical"
+        android:padding="15dp">
 
         <TextView
             android:id="@+id/tvTitleSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
             android:text="Signup"
             android:textSize="34sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="30dp"
-            android:layout_gravity="center"/>
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:padding="10dp"
-            android:inputType="text"
-            android:imeOptions="actionNext"
             android:layout_marginBottom="17dp"
-            android:hint="Full Name"/>
+            android:hint="Full Name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/etEmailSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:padding="10dp"
-            android:inputType="textEmailAddress"
-            android:imeOptions="actionNext"
             android:layout_marginBottom="15dp"
-            android:hint="Email"
-            />
+            android:hint="Academic Email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etIdSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="ID"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etBloodSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="Blood group"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etPhoneSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="Phone Number"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/etPasswordSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:padding="10dp"
             android:layout_marginBottom="17dp"
             android:hint="Password"
-            android:inputType="textPassword"
             android:imeOptions="actionDone"
-            />
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:padding="10dp"
-            android:textStyle="bold"
             android:layout_marginBottom="10dp"
-            android:text="Create Account"/>
+            android:padding="10dp"
+            android:text="Create Account"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/signin"
-            android:textColor="#090909"
-            android:textStyle="bold"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="20dp"
-            />
-
+            android:text="@string/signin"
+            android:textColor="#090909"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
